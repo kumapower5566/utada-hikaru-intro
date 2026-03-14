@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utada Hikaru | A Life in Songs</title>
+    <meta
+      name="description"
+      content="An artistic multilingual profile page about Utada Hikaru, spanning childhood songwriting, landmark albums, and her cross-cultural legacy."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-block">
+          <p class="brand-kicker" data-i18n="brandKicker">个人页面</p>
+          <a class="brand-title" href="#top">Utada Hikaru</a>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#story" data-i18n="navStory">历程</a>
+          <a href="#songs" data-i18n="navSongs">创作</a>
+          <a href="#legacy" data-i18n="navLegacy">回响</a>
+        </nav>
+        <div class="lang-switch" aria-label="Language switcher">
+          <button class="lang-btn active" data-lang="zh" aria-pressed="true">中</button>
+          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          <button class="lang-btn" data-lang="ja" aria-pressed="false">日</button>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero-section section">
+          <div class="hero-copy reveal reveal-delay-1">
+            <p class="eyebrow" data-i18n="heroEyebrow">从十岁开始写歌，直到世界听见</p>
+            <h1 class="hero-title" data-i18n="heroTitle">
+              宇多田光的声音，总像把私人情绪写成一整个时代的回声。
+            </h1>
+            <p class="hero-lead" data-i18n="heroLead">
+              这个页面以时间为经线，以作品为纬线，串起她从纽约成长、在日本爆发、再走向全球的创作轨迹。
+            </p>
+            <div class="hero-actions">
+              <a class="primary-link" href="#story" data-i18n="heroPrimary">进入时间轴</a>
+              <a class="secondary-link" href="#songs" data-i18n="heroSecondary">浏览作品阶段</a>
+            </div>
+            <div class="stat-row" id="stat-row"></div>
+          </div>
+
+          <div class="hero-visual reveal reveal-delay-2" aria-hidden="true">
+            <div class="orbit orbit-large"></div>
+            <div class="orbit orbit-small"></div>
+            <div class="vinyl-core">
+              <div class="vinyl-ring"></div>
+              <div class="vinyl-ring"></div>
+              <div class="vinyl-label">
+                <span data-i18n="visualLabelTop">New York</span>
+                <strong data-i18n="visualLabelCenter">Tokyo</strong>
+                <span data-i18n="visualLabelBottom">Across Borders</span>
+              </div>
+            </div>
+            <div class="floating-note note-a" data-i18n="visualNoteA">词与旋律</div>
+            <div class="floating-note note-b" data-i18n="visualNoteB">私人书写</div>
+            <div class="floating-note note-c" data-i18n="visualNoteC">流行实验</div>
+          </div>
+        </section>
+
+        <section id="story" class="section section-story">
+          <div class="section-heading reveal">
+            <p class="section-index">01</p>
+            <div>
+              <h2 data-i18n="storyTitle">成长与历程</h2>
+              <p data-i18n="storyIntro">
+                从音乐家庭出发，她把早熟的观察力和流行旋律结合成了极具个人辨识度的写作方式。
+              </p>
+            </div>
+          </div>
+          <div class="story-layout">
+            <article class="story-panel reveal reveal-delay-1">
+              <p data-i18n="storyBody1">
+                宇多田光 1983 年生于纽约，父母藤圭子与宇多田照實都从事音乐工作。她很早开始接触录音室，也在十岁左右开始写歌。
+              </p>
+              <p data-i18n="storyBody2">
+                少年时期以 Cubic U 名义尝试英语作品，1998 年回到日本主流乐坛后，以《Automatic / time will tell》迅速改写 J-pop 的声响结构。此后她的作品持续在流行、R&B、电子、抒情之间流动。
+              </p>
+            </article>
+            <aside class="story-aside reveal reveal-delay-2">
+              <h3 data-i18n="storyAsideTitle">三个持续出现的主题</h3>
+              <ul class="motif-list" id="motif-list"></ul>
+            </aside>
+          </div>
+          <div class="timeline-shell reveal reveal-delay-3">
+            <div class="timeline-line"></div>
+            <div class="timeline-list" id="timeline-list"></div>
+          </div>
+        </section>
+
+        <section id="songs" class="section section-songs">
+          <div class="section-heading reveal">
+            <p class="section-index">02</p>
+            <div>
+              <h2 data-i18n="songsTitle">从小到大的创作轨迹</h2>
+              <p data-i18n="songsIntro">
+                每个阶段都有不同的声场与情绪密度，但始终能听见她作为词曲作者的核心轮廓。
+              </p>
+            </div>
+          </div>
+          <div class="song-grid" id="song-grid"></div>
+        </section>
+
+        <section id="legacy" class="section section-legacy">
+          <div class="section-heading reveal">
+            <p class="section-index">03</p>
+            <div>
+              <h2 data-i18n="legacyTitle">她留下的回响</h2>
+              <p data-i18n="legacyIntro">
+                宇多田光的重要性不只在销量，更在于她重新定义了“流行歌手也能拥有高度私密与高度作者性”的可能。
+              </p>
+            </div>
+          </div>
+          <div class="legacy-grid" id="legacy-grid"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer reveal">
+        <div>
+          <p class="footer-title" data-i18n="footerTitle">参考线索</p>
+          <p class="footer-copy" data-i18n="footerCopy">
+            页面内容基于官方简介、官方作品目录与公开人物报道整理，用于展示型个人页面。
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="https://www.utadahikaru.jp/profile/" target="_blank" rel="noreferrer">utadahikaru.jp</a>
+          <a href="https://www.hikaruutada.com/music/" target="_blank" rel="noreferrer">hikaruutada.com</a>
+          <a
+            href="https://time.com/archive/6896298/the-songstress/"
+            target="_blank"
+            rel="noreferrer"
+            >TIME</a
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
