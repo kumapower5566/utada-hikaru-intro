@@ -32,6 +32,7 @@ body {
     radial-gradient(circle at 85% 12%, rgba(197, 83, 53, 0.16), transparent 26%),
     linear-gradient(180deg, #f7f0e6 0%, #efe3d2 45%, #f4ede3 100%);
   font-family: "Manrope", "Noto Serif SC", "Noto Serif JP", sans-serif;
+  font-size: 15px;
   line-height: 1.6;
 }
 
@@ -114,7 +115,7 @@ a {
 
 .brand-title {
   font-family: "Cormorant Garamond", "Noto Serif SC", "Noto Serif JP", serif;
-  font-size: clamp(1.5rem, 2vw, 1.9rem);
+  font-size: clamp(1.35rem, 1.7vw, 1.72rem);
   font-weight: 700;
   line-height: 1;
 }
@@ -123,7 +124,7 @@ a {
   display: flex;
   justify-content: center;
   gap: 24px;
-  font-size: 0.92rem;
+  font-size: 0.88rem;
 }
 
 .site-nav a {
@@ -220,14 +221,14 @@ a {
 }
 
 .hero-title {
-  font-size: clamp(3rem, 8vw, 5.8rem);
+  font-size: clamp(2.45rem, 6.4vw, 4.6rem);
   text-wrap: balance;
 }
 
 .hero-lead {
-  max-width: 58ch;
+  max-width: 54ch;
   margin: 20px 0 0;
-  font-size: 1.04rem;
+  font-size: 0.96rem;
 }
 
 .hero-actions {
@@ -287,7 +288,7 @@ a {
   display: block;
   margin-bottom: 4px;
   font-family: "Cormorant Garamond", "Noto Serif SC", "Noto Serif JP", serif;
-  font-size: clamp(1.7rem, 4vw, 2.7rem);
+  font-size: clamp(1.5rem, 3.3vw, 2.2rem);
 }
 
 .stat-label {
@@ -432,12 +433,13 @@ a {
 }
 
 .section-heading h2 {
-  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  font-size: clamp(2rem, 4.1vw, 3.4rem);
 }
 
 .section-heading p {
   max-width: 60ch;
   margin: 10px 0 0;
+  font-size: 0.96rem;
 }
 
 .story-layout {
@@ -473,7 +475,7 @@ a {
 }
 
 .story-aside h3 {
-  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  font-size: clamp(1.5rem, 2.5vw, 1.9rem);
   margin-bottom: 16px;
 }
 
@@ -539,12 +541,21 @@ a {
 .legacy-card h3 {
   margin: 0;
   font-family: "Cormorant Garamond", "Noto Serif SC", "Noto Serif JP", serif;
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
   line-height: 1.08;
 }
 
 .timeline-copy {
   margin: 10px 0 0;
+}
+
+.story-panel p,
+.motif-list li,
+.timeline-copy,
+.song-card p,
+.legacy-card p,
+.footer-copy {
+  font-size: 0.96rem;
 }
 
 .song-grid,
@@ -749,7 +760,7 @@ a {
   }
 
   .hero-title {
-    font-size: clamp(2.7rem, 16vw, 4.3rem);
+    font-size: clamp(2.2rem, 12vw, 3.35rem);
   }
 
   .section-heading {
