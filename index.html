@@ -28,12 +28,36 @@
           <a href="#songs" data-i18n="navSongs">创作</a>
           <a href="#legacy" data-i18n="navLegacy">回响</a>
         </nav>
-        <div class="lang-switch" aria-label="Language switcher">
-          <button class="lang-btn active" data-lang="zh" aria-pressed="true">中</button>
-          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-          <button class="lang-btn" data-lang="ja" aria-pressed="false">日</button>
+        <div class="header-tools">
+          <button class="sound-toggle" id="audio-sound-toggle" type="button" aria-pressed="false" aria-label="开启 First Love 声音">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M5 9.5h3.5L13 5.8v12.4l-4.5-3.7H5zM16.4 8.1a5.4 5.4 0 0 1 0 7.8M18.7 5.7a8.7 8.7 0 0 1 0 12.6"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.8"
+              />
+            </svg>
+          </button>
+          <div class="lang-switch" aria-label="Language switcher">
+            <button class="lang-btn active" data-lang="zh" aria-pressed="true">中</button>
+            <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+            <button class="lang-btn" data-lang="ja" aria-pressed="false">日</button>
+          </div>
         </div>
       </header>
+
+      <audio
+        id="header-audio"
+        src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/48/19/b2/4819b272-5c24-7450-0989-089abd71b016/mzaf_1477730334620289536.plus.aac.p.m4a"
+        preload="metadata"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></audio>
 
       <main id="top">
         <section class="hero-section section">
@@ -48,46 +72,6 @@
             <div class="hero-actions">
               <a class="primary-link" href="#story" data-i18n="heroPrimary">进入时间轴</a>
               <a class="secondary-link" href="#songs" data-i18n="heroSecondary">浏览作品阶段</a>
-            </div>
-            <div class="audio-card reveal reveal-delay-2">
-              <img
-                class="audio-art"
-                src="https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/6f/21/d3/6f21d367-770f-da85-ac51-72b4d4da3f24/jacket_ESXX01876B00Z_550.jpg/400x400bb.jpg"
-                alt="Utada Hikaru Too Proud cover art"
-              />
-              <div class="audio-copy">
-                <p class="audio-kicker" data-i18n="playerKicker">正在播放</p>
-                <h3 class="audio-title" data-i18n="playerTitle">Too Proud</h3>
-                <p class="audio-meta" data-i18n="playerMeta">官方预览版 · 初恋</p>
-                <p class="audio-status" id="audio-status" data-i18n="playerStatusMuted">
-                  默认静音自动播放，点击开声
-                </p>
-                <div class="audio-controls">
-                  <button class="audio-btn" id="audio-play-toggle" type="button" data-i18n="playerPause">
-                    暂停
-                  </button>
-                  <button class="audio-btn audio-btn-solid" id="audio-sound-toggle" type="button" data-i18n="playerSoundOn">
-                    开声
-                  </button>
-                </div>
-                <a
-                  class="audio-link"
-                  href="https://music.apple.com/cn/album/too-proud-feat-jevon/1538152426?i=1538152433&uo=4"
-                  target="_blank"
-                  rel="noreferrer"
-                  data-i18n="playerSource"
-                  >打开官方来源</a
-                >
-              </div>
-              <audio
-                id="hero-audio"
-                src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/70/9b/71709bdb-9357-dd51-9603-ba8bbf33732c/mzaf_3428912730598262354.plus.aac.p.m4a"
-                preload="metadata"
-                autoplay
-                muted
-                loop
-                playsinline
-              ></audio>
             </div>
             <div class="stat-row" id="stat-row"></div>
           </div>
