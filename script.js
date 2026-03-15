@@ -6,7 +6,7 @@ const content = {
     navSongs: "创作",
     navLegacy: "回响",
     heroEyebrow: "从十岁开始写歌，直到世界听见",
-    heroTitle: "宇多田光的声音——总像把私人情绪写成一整个时代的回声。",
+    heroTitle: "宇多田光把私人情绪写成时代回声。",
     heroLead:
       "这个页面以时间为经线，以作品为纬线，串起她从纽约成长、在日本爆发、再走向全球的创作轨迹。",
     heroPrimary: "进入时间轴",
@@ -174,7 +174,7 @@ const content = {
     navSongs: "Songs",
     navLegacy: "Legacy",
     heroEyebrow: "Writing songs from age ten, then letting the world hear them",
-    heroTitle: "Utada Hikaru - turning private feeling into the echo of an entire era.",
+    heroTitle: "Utada Hikaru turns private feeling into an echo of her era.",
     heroLead:
       "This page follows her path from a New York childhood to a Japanese breakthrough and a truly cross-border body of work.",
     heroPrimary: "Enter the timeline",
@@ -343,7 +343,7 @@ const content = {
     navSongs: "創作",
     navLegacy: "余韻",
     heroEyebrow: "10歳ごろから書き始めた歌が、やがて世界へ届く",
-    heroTitle: "宇多田ヒカルの声は - いつも個人的な感情を時代の響きへ変えてきた。",
+    heroTitle: "宇多田ヒカルは私的な感情を時代の響きへ変えていく。",
     heroLead:
       "このページは、ニューヨークでの幼少期から日本でのブレイク、そして境界を越えて広がる創作までを、時間と作品の両方からたどります。",
     heroPrimary: "タイムラインを見る",
