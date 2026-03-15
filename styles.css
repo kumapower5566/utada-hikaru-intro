@@ -282,6 +282,15 @@ a {
   text-wrap: balance;
 }
 
+html[lang="zh"] .hero-title,
+html[lang="zh"] .section-heading h2,
+html[lang="zh"] .story-aside h3 {
+  font-family: "Noto Serif SC", serif;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
 .hero-lead {
   max-width: 54ch;
   margin: 20px 0 0;
