@@ -317,6 +317,76 @@ html[lang="ja"] .hero-title {
   font-size: 0.96rem;
 }
 
+.hero-sticker {
+  position: absolute;
+  top: 118px;
+  right: -20px;
+  z-index: 2;
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  width: 168px;
+  padding: 16px 14px 14px;
+  border: 1px solid rgba(19, 35, 58, 0.12);
+  border-radius: 28px 26px 30px 24px;
+  background:
+    linear-gradient(165deg, rgba(255, 251, 246, 0.96), rgba(244, 236, 224, 0.88)),
+    rgba(255, 250, 244, 0.95);
+  box-shadow:
+    0 18px 40px rgba(19, 35, 58, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  transform: rotate(7deg);
+  pointer-events: none;
+}
+
+.hero-sticker::after {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  border: 1px dashed rgba(19, 35, 58, 0.16);
+  border-radius: 22px 20px 24px 18px;
+  opacity: 0.75;
+}
+
+.hero-sticker-tape {
+  position: absolute;
+  top: -12px;
+  width: 60px;
+  height: 20px;
+  border-radius: 6px;
+  background: rgba(229, 216, 194, 0.7);
+  border: 1px solid rgba(180, 159, 129, 0.3);
+  transform: rotate(-10deg);
+  box-shadow: 0 6px 16px rgba(19, 35, 58, 0.05);
+}
+
+.hero-sticker-bear,
+.hero-sticker-word,
+.hero-sticker-note {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-sticker-bear {
+  width: 42px;
+  color: var(--ink);
+}
+
+.hero-sticker-word {
+  font-family: "Cormorant Garamond", "Noto Serif SC", "Noto Serif JP", serif;
+  font-size: 2.15rem;
+  font-style: italic;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+}
+
+.hero-sticker-note {
+  font-size: 0.69rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -865,6 +935,12 @@ html[lang="ja"] .hero-title {
     min-height: 420px;
   }
 
+  .hero-sticker {
+    right: 4px;
+    top: 132px;
+    transform: rotate(6deg) scale(0.92);
+  }
+
   .photo-card-main {
     left: 10%;
     width: min(50%, 230px);
@@ -913,6 +989,10 @@ html[lang="ja"] .hero-title {
 
   .hero-title {
     font-size: clamp(2.2rem, 12vw, 3.35rem);
+  }
+
+  .hero-sticker {
+    display: none;
   }
 
   .section-heading {
