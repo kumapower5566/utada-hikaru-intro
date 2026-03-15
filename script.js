@@ -78,10 +78,22 @@ const content = {
           "《Fantôme》与《初恋》让她以更细腻的成年人视角书写失去、记忆与依恋；《One Last Kiss》《BAD MODE》则把电子声景、流行结构和情绪透明度结合得更加精准。"
       },
       {
-        year: "2023-2026",
-        title: "经典化之后仍持续更新",
+        year: "2024",
+        title: "以《SCIENCE FICTION》回望经典",
         copy:
-          "从《Gold》到 2024 年的精选项目《SCIENCE FICTION》，再到 2025 年的《Mine or Yours》与 2026 年和 Charlie Puth 合作的《Home》，她并没有停留在“怀旧符号”里，而是在持续回看并改写自己的声音档案。"
+          "2024 年的《SCIENCE FICTION》不是简单的怀旧精选，而更像一次对自身代表作的重新编排与重新陈列，也标记出她正式进入“经典化之后仍持续更新”的阶段。"
+      },
+      {
+        year: "2025",
+        title: "新单曲继续延展她的私人语气",
+        copy:
+          "到 2025 年，《Mine or Yours》延续了她近年的细腻写法，把成熟阶段的松弛、距离感与情绪浓度放进更轻盈的流行结构里。"
+      },
+      {
+        year: "2026.03.10",
+        title: "《Home》成为目前最新已发行作品",
+        copy:
+          "截至 2026 年 3 月 15 日，最新已发行作品是 Charlie Puth 与宇多田光合作的《Home (feat. Hikaru Utada)》。这首歌把英日双语、温柔合唱与跨文化合作自然地结合在一起。"
       }
     ],
     songs: [
@@ -229,10 +241,22 @@ const content = {
           "'Fantôme' and 'Hatsukoi' brought a mature perspective on loss, memory, and attachment, while 'One Last Kiss' and 'BAD MODE' fused transparency with sleek electronic design."
       },
       {
-        year: "2023-2026",
-        title: "Still revising the archive after becoming canonical",
+        year: "2024",
+        title: "Reframing the canon through SCIENCE FICTION",
         copy:
-          "From 'Gold' to the 2024 retrospective project 'SCIENCE FICTION,' the 2025 single 'Mine or Yours,' and the Charlie Puth collaboration 'Home,' she keeps revisiting her own catalog not as nostalgia, but as living material."
+          "The 2024 project 'SCIENCE FICTION' worked less like a nostalgic compilation and more like a curated reintroduction to her own canon."
+      },
+      {
+        year: "2025",
+        title: "New singles kept the intimate voice in motion",
+        copy:
+          "By 2025, 'Mine or Yours' showed how comfortably she could keep writing with softness, distance, and emotional precision inside a pop frame."
+      },
+      {
+        year: "2026.03.10",
+        title: "Home is the latest released work so far",
+        copy:
+          "As of March 15, 2026, the latest released work is 'Home (feat. Hikaru Utada),' her collaboration with Charlie Puth. It brings together bilingual writing, warmth, and an easy cross-border chemistry."
       }
     ],
     songs: [
@@ -380,10 +404,22 @@ const content = {
           "『Fantôme』『初恋』では喪失、記憶、愛着をより成熟した視点で描き、『One Last Kiss』『BAD MODE』では透明な感情と洗練された電子音を高い精度で結びつけました。"
       },
       {
-        year: "2023-2026",
-        title: "古典化した後もなお更新を続ける",
+        year: "2024",
+        title: "『SCIENCE FICTION』で代表作を再配置する",
         copy:
-          "『Gold』、2024 年の『SCIENCE FICTION』、2025 年の『Mine or Yours』、そして Charlie Puth との共作『Home』へと続く流れは、自身の歩みを懐古ではなく現在進行形の素材として捉え直していることを示しています。"
+          "2024 年の『SCIENCE FICTION』は、単なる懐古的なベスト盤というより、自身の代表作を現在の感覚で並べ直すキュレーションとして機能しました。"
+      },
+      {
+        year: "2025",
+        title: "新曲でも私的な温度を保ち続ける",
+        copy:
+          "2025 年の『Mine or Yours』では、近年の宇多田ヒカルらしい柔らかさ、距離感、そして感情の精度が、軽やかなポップの中で保たれています。"
+      },
+      {
+        year: "2026.03.10",
+        title: "現時点での最新リリースは『Home』",
+        copy:
+          "2026 年 3 月 15 日時点での最新リリースは、Charlie Puth との共作『Home (feat. Hikaru Utada)』です。英語と日本語が自然に交わる、越境性の高いコラボレーションになっています。"
       }
     ],
     songs: [
