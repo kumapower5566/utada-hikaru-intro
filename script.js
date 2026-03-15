@@ -666,6 +666,7 @@ elements.buttons.forEach((button) => {
 if (elements.audioSoundToggle && elements.audio) {
   elements.audioSoundToggle.addEventListener("click", async () => {
     if (elements.audio.paused || elements.audio.muted) {
+      elements.audio.currentTime = 0;
       elements.audio.muted = false;
       try {
         await elements.audio.play();
