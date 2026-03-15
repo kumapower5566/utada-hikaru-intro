@@ -6,7 +6,7 @@ const content = {
     navSongs: "创作",
     navLegacy: "回响",
     heroEyebrow: "从十岁开始写歌，直到世界听见",
-    heroTitle: "宇多田光的声音 - 总像把私人情绪写成一整个时代的回声。",
+    heroTitle: "宇多田光的声音——总像把私人情绪写成一整个时代的回声。",
     heroLead:
       "这个页面以时间为经线，以作品为纬线，串起她从纽约成长、在日本爆发、再走向全球的创作轨迹。",
     heroPrimary: "进入时间轴",
