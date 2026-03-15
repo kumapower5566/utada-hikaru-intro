@@ -39,7 +39,7 @@ const content = {
     stats: [
       { value: "1983", label: "纽约出生" },
       { value: "10岁", label: "开始写歌" },
-      { value: "3种语言", label: "中文 / English / 日本語" }
+      { value: "1998", label: "日本主流出道" }
     ],
     motifs: [
       "亲密而克制的第一人称写作",
@@ -190,7 +190,7 @@ const content = {
     stats: [
       { value: "1983", label: "Born in New York" },
       { value: "Age 10", label: "Started writing songs" },
-      { value: "3 languages", label: "Chinese / English / Japanese" }
+      { value: "1998", label: "Mainstream breakthrough in Japan" }
     ],
     motifs: [
       "Intimate first-person writing with restraint",
@@ -341,7 +341,7 @@ const content = {
     stats: [
       { value: "1983", label: "ニューヨーク生まれ" },
       { value: "10歳ごろ", label: "作詞作曲を開始" },
-      { value: "3言語", label: "中文 / English / 日本語" }
+      { value: "1998", label: "日本メジャーシーンへ登場" }
     ],
     motifs: [
       "抑制の効いた一人称の語り",
