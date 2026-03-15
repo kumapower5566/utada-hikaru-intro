@@ -278,6 +278,9 @@ a {
 }
 
 .stat-card {
+  display: grid;
+  align-content: start;
+  min-height: 170px;
   padding: 18px;
   border-radius: var(--radius-md);
   background: var(--bg-soft);
@@ -292,7 +295,13 @@ a {
 }
 
 .stat-label {
-  font-size: 0.75rem;
+  display: block;
+  max-width: 12ch;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  text-wrap: balance;
 }
 
 .hero-visual {
