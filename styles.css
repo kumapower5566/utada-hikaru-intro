@@ -280,6 +280,7 @@ a {
 .hero-title {
   font-size: clamp(2.45rem, 6.4vw, 4.6rem);
   text-wrap: balance;
+  max-width: 10.5ch;
 }
 
 html[lang="zh"] .hero-title,
@@ -288,6 +289,25 @@ html[lang="zh"] .story-aside h3 {
   font-family: "Noto Serif SC", serif;
   font-weight: 600;
   line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+html[lang="zh"] .hero-title {
+  max-width: 9ch;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+html[lang="en"] .hero-title {
+  max-width: 14ch;
+  line-height: 1.04;
+}
+
+html[lang="ja"] .hero-title {
+  max-width: 11ch;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  line-height: 1.08;
   letter-spacing: -0.02em;
 }
 
