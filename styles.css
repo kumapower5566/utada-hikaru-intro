@@ -436,7 +436,7 @@ a {
 
 .photo-card-main img {
   object-position: 50% 50%;
-  transform: scale(1.04);
+  transform: scale(1);
   transform-origin: center;
 }
 
