@@ -11,6 +11,18 @@ const content = {
       "这个页面以时间为经线，以作品为纬线，串起她从纽约成长、在日本爆发、再走向全球的创作轨迹。",
     heroPrimary: "进入时间轴",
     heroSecondary: "浏览作品阶段",
+    playerKicker: "正在播放",
+    playerTitle: "Too Proud",
+    playerMeta: "官方预览版 ·《初恋》",
+    playerSource: "打开官方来源",
+    playerPlay: "播放",
+    playerPause: "暂停",
+    playerSoundOn: "开声",
+    playerSoundOff: "静音",
+    playerStatusMuted: "默认静音自动播放，点击开声",
+    playerStatusSound: "正在播放，点击可关闭声音",
+    playerStatusPaused: "已暂停预览",
+    playerStatusReady: "预览已就绪",
     visualLabelTop: "纽约出生",
     visualLabelCenter: "东京爆发",
     visualLabelBottom: "跨文化流动",
@@ -177,6 +189,18 @@ const content = {
       "This page follows her path from a New York childhood to a Japanese breakthrough and a truly cross-border body of work.",
     heroPrimary: "Enter the timeline",
     heroSecondary: "Browse creative eras",
+    playerKicker: "Now Playing",
+    playerTitle: "Too Proud",
+    playerMeta: "Official preview · Hatsukoi",
+    playerSource: "Open official source",
+    playerPlay: "Play",
+    playerPause: "Pause",
+    playerSoundOn: "Sound on",
+    playerSoundOff: "Mute",
+    playerStatusMuted: "Autoplay starts muted. Tap to hear it.",
+    playerStatusSound: "Playing with sound. Tap to mute.",
+    playerStatusPaused: "Preview paused",
+    playerStatusReady: "Preview ready",
     visualLabelTop: "Born in New York",
     visualLabelCenter: "Exploded in Tokyo",
     visualLabelBottom: "Moving across borders",
@@ -344,6 +368,18 @@ const content = {
       "このページは、ニューヨークでの幼少期から日本でのブレイク、そして境界を越えて広がる創作までを、時間と作品の両方からたどります。",
     heroPrimary: "タイムラインを見る",
     heroSecondary: "創作の時期を見る",
+    playerKicker: "Now Playing",
+    playerTitle: "Too Proud",
+    playerMeta: "公式プレビュー · 『初恋』",
+    playerSource: "公式ソースを開く",
+    playerPlay: "再生",
+    playerPause: "一時停止",
+    playerSoundOn: "音を出す",
+    playerSoundOff: "ミュート",
+    playerStatusMuted: "自動再生はミュートです。タップで音を出せます。",
+    playerStatusSound: "音ありで再生中。タップでミュートできます。",
+    playerStatusPaused: "プレビューを停止しました",
+    playerStatusReady: "プレビューの準備完了",
     visualLabelTop: "ニューヨーク生まれ",
     visualLabelCenter: "東京で飛躍",
     visualLabelBottom: "境界を越える声",
@@ -513,7 +549,15 @@ const elements = {
   timelineList: document.querySelector("#timeline-list"),
   songGrid: document.querySelector("#song-grid"),
   legacyGrid: document.querySelector("#legacy-grid"),
-  buttons: document.querySelectorAll(".lang-btn")
+  buttons: document.querySelectorAll(".lang-btn"),
+  audio: document.querySelector("#hero-audio"),
+  audioPlayToggle: document.querySelector("#audio-play-toggle"),
+  audioSoundToggle: document.querySelector("#audio-sound-toggle"),
+  audioStatus: document.querySelector("#audio-status")
+};
+
+const playerState = {
+  hasAutoplayStarted: false
 };
 
 function fillText(locale) {
@@ -595,6 +639,41 @@ function updateButtons(locale) {
   });
 }
 
+function updatePlayerUI(locale) {
+  if (!elements.audio || !elements.audioPlayToggle || !elements.audioSoundToggle || !elements.audioStatus) {
+    return;
+  }
+
+  const labels = content[locale];
+  elements.audioPlayToggle.textContent = elements.audio.paused ? labels.playerPlay : labels.playerPause;
+  elements.audioSoundToggle.textContent = elements.audio.muted ? labels.playerSoundOn : labels.playerSoundOff;
+
+  if (elements.audio.paused && !playerState.hasAutoplayStarted) {
+    elements.audioStatus.textContent = labels.playerStatusReady;
+  } else if (elements.audio.paused) {
+    elements.audioStatus.textContent = labels.playerStatusPaused;
+  } else if (elements.audio.muted) {
+    elements.audioStatus.textContent = labels.playerStatusMuted;
+  } else {
+    elements.audioStatus.textContent = labels.playerStatusSound;
+  }
+}
+
+async function ensureAudioPlayback(locale) {
+  if (!elements.audio) {
+    return;
+  }
+
+  try {
+    await elements.audio.play();
+    playerState.hasAutoplayStarted = true;
+  } catch {
+    playerState.hasAutoplayStarted = false;
+  }
+
+  updatePlayerUI(locale);
+}
+
 function setLanguage(locale) {
   const safeLocale = content[locale] ? locale : "zh";
 
@@ -607,6 +686,7 @@ function setLanguage(locale) {
   renderSongs(safeLocale);
   renderLegacy(safeLocale);
   updateButtons(safeLocale);
+  updatePlayerUI(safeLocale);
   localStorage.setItem("utada-language", safeLocale);
 
   const metaDescription = document.querySelector('meta[name="description"]');
@@ -621,6 +701,50 @@ elements.buttons.forEach((button) => {
   });
 });
 
+if (elements.audioPlayToggle && elements.audio) {
+  elements.audioPlayToggle.addEventListener("click", async () => {
+    if (elements.audio.paused) {
+      try {
+        await elements.audio.play();
+        playerState.hasAutoplayStarted = true;
+      } catch {
+        playerState.hasAutoplayStarted = false;
+      }
+    } else {
+      elements.audio.pause();
+    }
+
+    updatePlayerUI(document.documentElement.lang);
+  });
+}
+
+if (elements.audioSoundToggle && elements.audio) {
+  elements.audioSoundToggle.addEventListener("click", async () => {
+    elements.audio.muted = !elements.audio.muted;
+
+    if (!playerState.hasAutoplayStarted || elements.audio.paused) {
+      try {
+        await elements.audio.play();
+        playerState.hasAutoplayStarted = true;
+      } catch {
+        if (elements.audioStatus) {
+          elements.audioStatus.textContent = content[document.documentElement.lang].playerStatusReady;
+        }
+      }
+    }
+
+    updatePlayerUI(document.documentElement.lang);
+  });
+}
+
+if (elements.audio) {
+  ["play", "pause", "volumechange"].forEach((eventName) => {
+    elements.audio.addEventListener(eventName, () => {
+      updatePlayerUI(document.documentElement.lang);
+    });
+  });
+}
+
 const userLanguage = localStorage.getItem("utada-language");
 const browserLanguage = navigator.language.startsWith("ja")
   ? "ja"
@@ -629,3 +753,4 @@ const browserLanguage = navigator.language.startsWith("ja")
     : "en";
 
 setLanguage(userLanguage || browserLanguage);
+ensureAudioPlayback(userLanguage || browserLanguage);
