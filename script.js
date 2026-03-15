@@ -38,8 +38,8 @@ const content = {
     footerCopy: "页面内容基于官方简介、官方作品目录与公开人物报道整理，用于展示型个人页面。",
     stats: [
       { value: "1983", label: "纽约出生" },
-      { value: "10岁", label: "开始写歌" },
-      { value: "1998", label: "日本主流出道" }
+      { value: "1998", label: "日本主流出道" },
+      { value: "2024", label: "《SCIENCE FICTION》" }
     ],
     motifs: [
       "亲密而克制的第一人称写作",
@@ -78,10 +78,10 @@ const content = {
           "《Fantôme》与《初恋》让她以更细腻的成年人视角书写失去、记忆与依恋；《One Last Kiss》《BAD MODE》则把电子声景、流行结构和情绪透明度结合得更加精准。"
       },
       {
-        year: "2023-2025",
+        year: "2023-2026",
         title: "经典化之后仍持续更新",
         copy:
-          "从《Gold》到 2024 年的精选项目《SCIENCE FICTION》，再到 2025 年的新曲《Mine or Yours》，她并没有停留在“怀旧符号”里，而是在持续回看并改写自己的声音档案。"
+          "从《Gold》到 2024 年的精选项目《SCIENCE FICTION》，再到 2025 年的《Mine or Yours》与 2026 年和 Charlie Puth 合作的《Home》，她并没有停留在“怀旧符号”里，而是在持续回看并改写自己的声音档案。"
       }
     ],
     songs: [
@@ -124,8 +124,8 @@ const content = {
         era: "Present Tense",
         title: "成熟阶段仍保有实验心",
         text:
-          "近年的作品在节拍、空间感和歌词视角上依旧大胆。她能让大热动画主题曲与高度私人的创作并存，说明作者性始终没有退场。",
-        tracks: ["One Last Kiss", "BAD MODE", "Gold", "Mine or Yours"]
+          "近年的作品在节拍、空间感和歌词视角上依旧大胆。从《Mine or Yours》到和 Charlie Puth 合作的双语单曲《Home》，她仍能把流行度与作者性同时握在手里。",
+        tracks: ["One Last Kiss", "BAD MODE", "Gold", "Mine or Yours", "Home"]
       }
     ],
     legacy: [
@@ -189,8 +189,8 @@ const content = {
       "The page draws from official biographies, official discography materials, and public profile reporting for a presentation-style artist page.",
     stats: [
       { value: "1983", label: "Born in New York" },
-      { value: "Age 10", label: "Started writing songs" },
-      { value: "1998", label: "Mainstream breakthrough in Japan" }
+      { value: "1998", label: "Mainstream breakthrough in Japan" },
+      { value: "2024", label: "SCIENCE FICTION" }
     ],
     motifs: [
       "Intimate first-person writing with restraint",
@@ -229,10 +229,10 @@ const content = {
           "'Fantôme' and 'Hatsukoi' brought a mature perspective on loss, memory, and attachment, while 'One Last Kiss' and 'BAD MODE' fused transparency with sleek electronic design."
       },
       {
-        year: "2023-2025",
+        year: "2023-2026",
         title: "Still revising the archive after becoming canonical",
         copy:
-          "From 'Gold' to the 2024 retrospective project 'SCIENCE FICTION' and the 2025 single 'Mine or Yours,' she keeps revisiting her own catalog not as nostalgia, but as living material."
+          "From 'Gold' to the 2024 retrospective project 'SCIENCE FICTION,' the 2025 single 'Mine or Yours,' and the Charlie Puth collaboration 'Home,' she keeps revisiting her own catalog not as nostalgia, but as living material."
       }
     ],
     songs: [
@@ -275,8 +275,8 @@ const content = {
         era: "Present Tense",
         title: "Still experimental in full maturity",
         text:
-          "Recent work stays bold in rhythm, space, and perspective. She can hold a major anime theme and a deeply personal track within the same artistic logic.",
-        tracks: ["One Last Kiss", "BAD MODE", "Gold", "Mine or Yours"]
+          "Recent work stays bold in rhythm, space, and perspective. From 'Mine or Yours' to the bilingual Charlie Puth collaboration 'Home,' she keeps balancing accessibility with a distinct authorial voice.",
+        tracks: ["One Last Kiss", "BAD MODE", "Gold", "Mine or Yours", "Home"]
       }
     ],
     legacy: [
@@ -340,8 +340,8 @@ const content = {
       "このページは、公式プロフィール、公式ディスコグラフィー、公開プロフィール記事をもとに構成した展示用のアーティストページです。",
     stats: [
       { value: "1983", label: "ニューヨーク生まれ" },
-      { value: "10歳ごろ", label: "作詞作曲を開始" },
-      { value: "1998", label: "日本メジャーシーンへ登場" }
+      { value: "1998", label: "日本メジャーシーンへ登場" },
+      { value: "2024", label: "『SCIENCE FICTION』" }
     ],
     motifs: [
       "抑制の効いた一人称の語り",
@@ -380,10 +380,10 @@ const content = {
           "『Fantôme』『初恋』では喪失、記憶、愛着をより成熟した視点で描き、『One Last Kiss』『BAD MODE』では透明な感情と洗練された電子音を高い精度で結びつけました。"
       },
       {
-        year: "2023-2025",
+        year: "2023-2026",
         title: "古典化した後もなお更新を続ける",
         copy:
-          "『Gold』、2024 年の『SCIENCE FICTION』、そして 2025 年の新曲『Mine or Yours』へと続く流れは、自身の歩みを懐古ではなく現在進行形の素材として捉え直していることを示しています。"
+          "『Gold』、2024 年の『SCIENCE FICTION』、2025 年の『Mine or Yours』、そして Charlie Puth との共作『Home』へと続く流れは、自身の歩みを懐古ではなく現在進行形の素材として捉え直していることを示しています。"
       }
     ],
     songs: [
@@ -426,8 +426,8 @@ const content = {
         era: "Present Tense",
         title: "成熟してなお実験をやめない",
         text:
-          "近年の作品は、リズム、空間、視点の取り方においてなお大胆です。大きなアニメ主題歌も、きわめて私的な曲も、同じ作家性の中で共存しています。",
-        tracks: ["One Last Kiss", "BAD MODE", "Gold", "Mine or Yours"]
+          "近年の作品は、リズム、空間、視点の取り方においてなお大胆です。『Mine or Yours』から Charlie Puth とのバイリンガル曲『Home』まで、届きやすさと作家性が同居しています。",
+        tracks: ["One Last Kiss", "BAD MODE", "Gold", "Mine or Yours", "Home"]
       }
     ],
     legacy: [
