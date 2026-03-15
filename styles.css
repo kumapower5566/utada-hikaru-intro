@@ -434,6 +434,12 @@ a {
   object-fit: cover;
 }
 
+.photo-card-main img {
+  object-position: 50% 44%;
+  transform: scale(1.38);
+  transform-origin: center;
+}
+
 .photo-card figcaption {
   position: absolute;
   left: 14px;
