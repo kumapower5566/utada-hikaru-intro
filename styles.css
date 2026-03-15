@@ -325,7 +325,7 @@ a {
 }
 
 .orbit,
-.vinyl-core,
+.photo-collage,
 .floating-note {
   position: absolute;
 }
@@ -347,49 +347,62 @@ a {
   animation: spin-reverse 16s linear infinite;
 }
 
-.vinyl-core {
-  display: grid;
-  place-items: center;
-  width: min(72%, 360px);
+.photo-collage {
+  inset: 0;
+}
+
+.photo-card {
+  position: absolute;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 26px;
+  background: rgba(255, 248, 240, 0.62);
+  box-shadow: 0 18px 50px rgba(19, 35, 58, 0.18);
+}
+
+.photo-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-card figcaption {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(12, 24, 42, 0.72);
+  color: #fff7ef;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  backdrop-filter: blur(10px);
+}
+
+.photo-card-main {
+  left: 18%;
+  top: 5%;
+  width: min(52%, 260px);
+  height: min(80%, 430px);
+  transform: rotate(-3deg);
+}
+
+.photo-card-top {
+  right: 8%;
+  top: 10%;
+  width: min(44%, 230px);
+  aspect-ratio: 1 / 1.12;
+  transform: rotate(5deg);
+}
+
+.photo-card-bottom {
+  right: 14%;
+  bottom: 7%;
+  width: min(48%, 250px);
   aspect-ratio: 1;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at center, rgba(12, 31, 58, 0.98) 0 24%, transparent 24% 100%),
-    conic-gradient(from 120deg, #101a2f, #314660, #0d1528, #314660, #101a2f);
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
-    0 18px 50px rgba(19, 35, 58, 0.3);
-}
-
-.vinyl-ring {
-  position: absolute;
-  border-radius: 50%;
-  inset: 10%;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.vinyl-ring:last-child {
-  inset: 24%;
-}
-
-.vinyl-label {
-  position: absolute;
-  display: grid;
-  gap: 6px;
-  text-align: center;
-  color: #f4e4ce;
-}
-
-.vinyl-label span {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.vinyl-label strong {
-  font-family: "Cormorant Garamond", "Noto Serif SC", "Noto Serif JP", serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1;
+  transform: rotate(-6deg);
 }
 
 .floating-note {
@@ -729,6 +742,22 @@ a {
     min-height: 420px;
   }
 
+  .photo-card-main {
+    left: 10%;
+    width: min(50%, 230px);
+    height: min(78%, 360px);
+  }
+
+  .photo-card-top {
+    right: 4%;
+    width: min(42%, 190px);
+  }
+
+  .photo-card-bottom {
+    right: 8%;
+    width: min(44%, 200px);
+  }
+
   .stat-row,
   .legacy-grid,
   .song-grid {
@@ -778,6 +807,35 @@ a {
 
   .floating-note {
     font-size: 0.85rem;
+  }
+
+  .hero-visual {
+    min-height: 500px;
+  }
+
+  .photo-card-main {
+    left: 7%;
+    top: 8%;
+    width: 54%;
+    height: 64%;
+  }
+
+  .photo-card-top {
+    top: 4%;
+    right: 2%;
+    width: 42%;
+  }
+
+  .photo-card-bottom {
+    right: 6%;
+    bottom: 8%;
+    width: 46%;
+  }
+
+  .photo-card figcaption {
+    left: 10px;
+    bottom: 10px;
+    font-size: 0.68rem;
   }
 }
 
