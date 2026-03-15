@@ -642,9 +642,9 @@ a {
 
 .site-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 22px;
-  align-items: flex-end;
+  align-items: flex-start;
   padding: 18px 6px 0;
 }
 
@@ -657,18 +657,6 @@ a {
 .footer-copy {
   margin: 0;
   max-width: 58ch;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 14px;
-}
-
-.footer-links a {
-  padding-bottom: 2px;
-  border-bottom: 1px solid rgba(19, 35, 58, 0.22);
 }
 
 .reveal {
@@ -780,9 +768,6 @@ a {
     align-items: flex-start;
   }
 
-  .footer-links {
-    justify-content: flex-start;
-  }
 }
 
 @media (max-width: 720px) {
