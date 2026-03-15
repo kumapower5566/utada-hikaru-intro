@@ -36,11 +36,11 @@ const content = {
     legacyTitle: "她留下的回响",
     legacyIntro:
       "宇多田光的重要性不只在销量，更在于她重新定义了“流行歌手也能拥有高度私密与高度作者性”的可能。",
-    footerTitle: "参考线索",
-    footerCopy: "页面内容基于官方简介、官方作品目录与公开人物报道整理，用于展示型个人页面。",
+    footerTitle: "功能",
+    footerCopy: "支持中英日切换、时间轴浏览、作品阶段整理与页面内音频播放。",
     footerMetaA: "三语切换",
-    footerMetaB: "时间策展",
-    footerMetaC: "更新至 2026.03",
+    footerMetaB: "时间轴浏览",
+    footerMetaC: "音频播放",
     stats: [
       { value: "1983", label: "写作起点" },
       { value: "1998", label: "主流突破" },
@@ -204,12 +204,12 @@ const content = {
     legacyTitle: "The resonance she leaves behind",
     legacyIntro:
       "Utada Hikaru matters not only because of record-breaking success, but because she expanded what a mainstream pop auteur could be.",
-    footerTitle: "Reference points",
+    footerTitle: "Features",
     footerCopy:
-      "The page draws from official biographies, official discography materials, and public profile reporting for a presentation-style artist page.",
-    footerMetaA: "Trilingual view",
-    footerMetaB: "Timeline curation",
-    footerMetaC: "Updated through 2026.03",
+      "Includes Chinese, English, and Japanese switching, timeline browsing, creative-era highlights, and in-page audio playback.",
+    footerMetaA: "Trilingual",
+    footerMetaB: "Timeline",
+    footerMetaC: "Audio",
     stats: [
       { value: "1983", label: "Songwriting beginnings" },
       { value: "1998", label: "Mainstream breakthrough" },
@@ -373,12 +373,12 @@ const content = {
     legacyTitle: "彼女が残した余韻",
     legacyIntro:
       "宇多田ヒカルの重要さは記録的な成功だけではなく、メインストリームのポップに強い私性と作家性を持ち込んだことにもあります。",
-    footerTitle: "参照した情報源",
+    footerTitle: "機能",
     footerCopy:
-      "このページは、公式プロフィール、公式ディスコグラフィー、公開プロフィール記事をもとに構成した展示用のアーティストページです。",
-    footerMetaA: "3言語表示",
-    footerMetaB: "時間のキュレーション",
-    footerMetaC: "2026.03 時点で更新",
+      "中国語・英語・日本語の切り替え、年表表示、作品フェーズ整理、ページ内音声再生に対応しています。",
+    footerMetaA: "3言語切替",
+    footerMetaB: "年表表示",
+    footerMetaC: "音声再生",
     stats: [
       { value: "1983", label: "作詞作曲の出発点" },
       { value: "1998", label: "メインストリームでの突破" },
