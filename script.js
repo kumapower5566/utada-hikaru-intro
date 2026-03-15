@@ -37,9 +37,10 @@ const content = {
     footerTitle: "参考线索",
     footerCopy: "页面内容基于官方简介、官方作品目录与公开人物报道整理，用于展示型个人页面。",
     stats: [
-      { value: "1983", label: "纽约出生" },
-      { value: "1998", label: "日本出道" },
-      { value: "2024", label: "经典回望" }
+      { value: "1983", label: "写作起点" },
+      { value: "1998", label: "主流突破" },
+      { value: "2024", label: "《SCIENCE FICTION》" },
+      { value: "2026", label: "《Home》最新合作" }
     ],
     motifs: [
       "亲密而克制的第一人称写作",
@@ -200,9 +201,10 @@ const content = {
     footerCopy:
       "The page draws from official biographies, official discography materials, and public profile reporting for a presentation-style artist page.",
     stats: [
-      { value: "1983", label: "Born in New York" },
-      { value: "1998", label: "Japan debut" },
-      { value: "2024", label: "Reframing the canon" }
+      { value: "1983", label: "Songwriting beginnings" },
+      { value: "1998", label: "Mainstream breakthrough" },
+      { value: "2024", label: "SCIENCE FICTION" },
+      { value: "2026", label: "Home, latest release" }
     ],
     motifs: [
       "Intimate first-person writing with restraint",
@@ -363,9 +365,10 @@ const content = {
     footerCopy:
       "このページは、公式プロフィール、公式ディスコグラフィー、公開プロフィール記事をもとに構成した展示用のアーティストページです。",
     stats: [
-      { value: "1983", label: "ニューヨーク生まれ" },
-      { value: "1998", label: "日本デビュー" },
-      { value: "2024", label: "代表作を再配置" }
+      { value: "1983", label: "作詞作曲の出発点" },
+      { value: "1998", label: "メインストリームでの突破" },
+      { value: "2024", label: "『SCIENCE FICTION』" },
+      { value: "2026", label: "『Home』最新コラボ" }
     ],
     motifs: [
       "抑制の効いた一人称の語り",
