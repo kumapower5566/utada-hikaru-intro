@@ -272,7 +272,7 @@ a {
 
 .stat-row {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
   margin-top: 32px;
 }
@@ -280,7 +280,7 @@ a {
 .stat-card {
   display: grid;
   align-content: start;
-  min-height: 170px;
+  min-height: 158px;
   padding: 18px;
   border-radius: var(--radius-md);
   background: var(--bg-soft);
@@ -767,7 +767,10 @@ a {
     width: min(44%, 200px);
   }
 
-  .stat-row,
+  .stat-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .legacy-grid,
   .song-grid {
     grid-template-columns: 1fr;
@@ -804,6 +807,10 @@ a {
   .section-heading {
     flex-direction: column;
     gap: 8px;
+  }
+
+  .stat-row {
+    grid-template-columns: 1fr;
   }
 
   .timeline-shell {
