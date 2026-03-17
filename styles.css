@@ -162,39 +162,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-self: end;
-  gap: 12px;
-}
-
-.sound-toggle {
-  position: relative;
-  display: inline-grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
-  border: 0;
-  border-radius: 999px;
-  background: rgba(19, 35, 58, 0.08);
-  color: var(--ink);
-  cursor: pointer;
-  text-decoration: none;
-  transition:
-    transform 180ms ease,
-    background 180ms ease,
-    color 180ms ease,
-    box-shadow 180ms ease;
-}
-
-.sound-toggle svg {
-  width: 18px;
-  height: 18px;
-}
-
-.sound-toggle:hover,
-.sound-toggle:focus-visible {
-  transform: translateY(-1px);
-  background: var(--ink);
-  color: #fffaf4;
-  box-shadow: 0 10px 22px rgba(19, 35, 58, 0.18);
+  gap: 0;
 }
 
 .lang-btn {
