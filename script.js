@@ -11,7 +11,6 @@ const content = {
       "这个页面以时间为经线，以作品为纬线，串起她从纽约成长、在日本爆发、再走向全球的创作轨迹。",
     heroPrimary: "进入时间轴",
     heroSecondary: "浏览作品阶段",
-    playerLabel: "打开官方音乐页",
     visualLabelTop: "纽约出生",
     visualLabelCenter: "东京爆发",
     visualLabelBottom: "跨文化流动",
@@ -36,10 +35,10 @@ const content = {
     legacyIntro:
       "宇多田光的重要性不只在销量，更在于她重新定义了“流行歌手也能拥有高度私密与高度作者性”的可能。",
     footerTitle: "功能",
-    footerCopy: "支持中英日切换、时间轴浏览、作品阶段整理与页面内音频播放。",
+    footerCopy: "支持中英日切换、时间轴浏览与作品阶段整理。",
     footerMetaA: "三语切换",
     footerMetaB: "时间轴浏览",
-    footerMetaC: "音频播放",
+    footerMetaC: "作品阶段",
     stats: [
       { value: "1983", label: "写作起点" },
       { value: "1998", label: "主流突破" },
@@ -178,7 +177,6 @@ const content = {
       "This page follows her path from a New York childhood to a Japanese breakthrough and a truly cross-border body of work.",
     heroPrimary: "Enter the timeline",
     heroSecondary: "Browse creative eras",
-    playerLabel: "Open official music page",
     visualLabelTop: "Born in New York",
     visualLabelCenter: "Exploded in Tokyo",
     visualLabelBottom: "Moving across borders",
@@ -204,10 +202,10 @@ const content = {
       "Utada Hikaru matters not only because of record-breaking success, but because she expanded what a mainstream pop auteur could be.",
     footerTitle: "Features",
     footerCopy:
-      "Includes Chinese, English, and Japanese switching, timeline browsing, creative-era highlights, and in-page audio playback.",
+      "Includes Chinese, English, and Japanese switching, timeline browsing, and creative-era highlights.",
     footerMetaA: "Trilingual",
     footerMetaB: "Timeline",
-    footerMetaC: "Audio",
+    footerMetaC: "Creative eras",
     stats: [
       { value: "1983", label: "Songwriting beginnings" },
       { value: "1998", label: "Mainstream breakthrough" },
@@ -346,7 +344,6 @@ const content = {
       "このページは、ニューヨークでの幼少期から日本でのブレイク、そして境界を越えて広がる創作までを、時間と作品の両方からたどります。",
     heroPrimary: "タイムラインを見る",
     heroSecondary: "創作の時期を見る",
-    playerLabel: "公式音楽ページを開く",
     visualLabelTop: "ニューヨーク生まれ",
     visualLabelCenter: "東京で飛躍",
     visualLabelBottom: "境界を越える声",
@@ -372,10 +369,10 @@ const content = {
       "宇多田ヒカルの重要さは記録的な成功だけではなく、メインストリームのポップに強い私性と作家性を持ち込んだことにもあります。",
     footerTitle: "機能",
     footerCopy:
-      "中国語・英語・日本語の切り替え、年表表示、作品フェーズ整理、ページ内音声再生に対応しています。",
+      "中国語・英語・日本語の切り替え、年表表示、作品フェーズ整理に対応しています。",
     footerMetaA: "3言語切替",
     footerMetaB: "年表表示",
-    footerMetaC: "音声再生",
+    footerMetaC: "作品フェーズ",
     stats: [
       { value: "1983", label: "作詞作曲の出発点" },
       { value: "1998", label: "メインストリームでの突破" },
@@ -516,8 +513,7 @@ const elements = {
   timelineList: document.querySelector("#timeline-list"),
   songGrid: document.querySelector("#song-grid"),
   legacyGrid: document.querySelector("#legacy-grid"),
-  buttons: document.querySelectorAll(".lang-btn"),
-  officialPlayerLink: document.querySelector("#official-player-link")
+  buttons: document.querySelectorAll(".lang-btn")
 };
 
 function fillText(locale) {
@@ -599,16 +595,6 @@ function updateButtons(locale) {
   });
 }
 
-function updatePlayerUI(locale) {
-  if (!elements.officialPlayerLink) {
-    return;
-  }
-
-  const labels = content[locale];
-  elements.officialPlayerLink.setAttribute("aria-label", labels.playerLabel);
-  elements.officialPlayerLink.setAttribute("title", labels.playerLabel);
-}
-
 function setLanguage(locale) {
   const safeLocale = content[locale] ? locale : "zh";
 
@@ -621,7 +607,6 @@ function setLanguage(locale) {
   renderSongs(safeLocale);
   renderLegacy(safeLocale);
   updateButtons(safeLocale);
-  updatePlayerUI(safeLocale);
   localStorage.setItem("utada-language", safeLocale);
 
   const metaDescription = document.querySelector('meta[name="description"]');
