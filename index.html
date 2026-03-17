@@ -29,7 +29,15 @@
           <a href="#legacy" data-i18n="navLegacy">回响</a>
         </nav>
         <div class="header-tools">
-          <button class="sound-toggle" id="audio-sound-toggle" type="button" aria-pressed="false" aria-label="开启声音">
+          <a
+            class="sound-toggle"
+            id="official-player-link"
+            href="https://www.utadahikaru.jp/music/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="打开官方音乐页"
+            title="打开官方音乐页"
+          >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M5 9.5h3.5L13 5.8v12.4l-4.5-3.7H5zM16.4 8.1a5.4 5.4 0 0 1 0 7.8M18.7 5.7a8.7 8.7 0 0 1 0 12.6"
@@ -40,7 +48,7 @@
                 stroke-width="1.8"
               />
             </svg>
-          </button>
+          </a>
           <div class="lang-switch" aria-label="Language switcher">
             <button class="lang-btn active" data-lang="zh" aria-pressed="true">中</button>
             <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
@@ -48,16 +56,6 @@
           </div>
         </div>
       </header>
-
-      <audio
-        id="header-audio"
-        src="./audio/hero-audio.m4a"
-        preload="metadata"
-        autoplay
-        muted
-        loop
-        playsinline
-      ></audio>
 
       <main id="top">
         <section class="hero-section section">
