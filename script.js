@@ -18,8 +18,8 @@ const content = {
     visualNoteB: "私人书写",
     visualNoteC: "流行实验",
     photoCaptionLive: "演唱会近景",
-    photoCaptionCurrent: "2025 官方艺人照",
-    photoCaptionPortrait: "綾鷹广告视觉",
+    photoCaptionCurrent: "纽约街头留影",
+    photoCaptionPortrait: "2004 公开活动照",
     storyTitle: "成长与历程",
     storyIntro:
       "从音乐家庭出发，她把早熟的观察力和流行旋律结合成了极具个人辨识度的写作方式。",
@@ -39,6 +39,7 @@ const content = {
     footerMetaA: "三语切换",
     footerMetaB: "时间轴浏览",
     footerMetaC: "作品阶段",
+    footerCreditLabel: "图片署名",
     stats: [
       { value: "1983", label: "写作起点" },
       { value: "1998", label: "主流突破" },
@@ -184,8 +185,8 @@ const content = {
     visualNoteB: "Intimate writing",
     visualNoteC: "Pop experiments",
     photoCaptionLive: "Live close-up",
-    photoCaptionCurrent: "2025 official artist photo",
-    photoCaptionPortrait: "Ayataka campaign visual",
+    photoCaptionCurrent: "New York street portrait",
+    photoCaptionPortrait: "Public appearance, 2004",
     storyTitle: "Growth and Journey",
     storyIntro:
       "Starting in a musical family, she fused early emotional intelligence with pop craft into a voice that felt unmistakably her own.",
@@ -206,6 +207,7 @@ const content = {
     footerMetaA: "Trilingual",
     footerMetaB: "Timeline",
     footerMetaC: "Creative eras",
+    footerCreditLabel: "Image credits",
     stats: [
       { value: "1983", label: "Songwriting beginnings" },
       { value: "1998", label: "Mainstream breakthrough" },
@@ -351,8 +353,8 @@ const content = {
     visualNoteB: "私的な筆致",
     visualNoteC: "ポップの実験",
     photoCaptionLive: "ライブの近景",
-    photoCaptionCurrent: "2025年公式アーティスト写真",
-    photoCaptionPortrait: "綾鷹キャンペーンビジュアル",
+    photoCaptionCurrent: "ニューヨークでのポートレート",
+    photoCaptionPortrait: "2004年の公開イベント写真",
     storyTitle: "成長と歩み",
     storyIntro:
       "音楽一家に生まれ、早熟な観察力とポップの技法を結びつけながら、他に置き換えられない書き手としての声を育てていきました。",
@@ -373,6 +375,7 @@ const content = {
     footerMetaA: "3言語切替",
     footerMetaB: "年表表示",
     footerMetaC: "作品フェーズ",
+    footerCreditLabel: "画像クレジット",
     stats: [
       { value: "1983", label: "作詞作曲の出発点" },
       { value: "1998", label: "メインストリームでの突破" },
