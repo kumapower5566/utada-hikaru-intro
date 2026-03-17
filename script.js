@@ -43,7 +43,7 @@ const content = {
     footerSourceLive: "主图：由站点创建者提供的现场图参考",
     footerSourceCurrent: "右上图：宇多田光官网 2025 视觉",
     footerSourcePortrait: "右下图：官方綾鷹联动视觉",
-    footerSourceSticker: "贴纸图：由站点创建者提供的 Instagram 图片参考",
+    footerSourceSticker: "贴纸图：来自 Instagram 账号 kuma_power 的图片参考",
     footerDisclaimerTitle: "免责声明",
     footerDisclaimer:
       "本页仅作非商业的粉丝向展示与设计练习使用。若任何图片或相关权益方认为内容不适合展示，请联系删除。",
@@ -218,7 +218,7 @@ const content = {
     footerSourceLive: "Main image: live image reference provided by the site creator",
     footerSourceCurrent: "Top-right image: 2025 visual from Utada Hikaru's official site",
     footerSourcePortrait: "Bottom-right image: official Ayataka collaboration visual",
-    footerSourceSticker: "Sticker image: Instagram image reference provided by the site creator",
+    footerSourceSticker: "Sticker image: image reference from the Instagram account kuma_power",
     footerDisclaimerTitle: "Disclaimer",
     footerDisclaimer:
       "This page is shared only as a non-commercial fan presentation and design exercise. If any image owner or rights holder would like content removed, it can be taken down upon request.",
@@ -393,7 +393,7 @@ const content = {
     footerSourceLive: "メイン画像：サイト作成者が用意したライブ画像リファレンス",
     footerSourceCurrent: "右上画像：宇多田ヒカル公式サイトの 2025 ビジュアル",
     footerSourcePortrait: "右下画像：綾鷹との公式コラボビジュアル",
-    footerSourceSticker: "ステッカー画像：サイト作成者が用意した Instagram 画像リファレンス",
+    footerSourceSticker: "ステッカー画像：Instagram アカウント kuma_power の画像リファレンス",
     footerDisclaimerTitle: "免責事項",
     footerDisclaimer:
       "本ページは非商用のファン向け展示とデザイン練習のみを目的としています。画像の権利者または関係者から申し出があった場合は削除対応します。",
