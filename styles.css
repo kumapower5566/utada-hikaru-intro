@@ -808,6 +808,37 @@ html[lang="ja"] .hero-title {
   letter-spacing: 0.06em;
 }
 
+.footer-credits {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(19, 35, 58, 0.08);
+}
+
+.footer-credit-label {
+  margin: 0 0 8px;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.footer-credit-copy {
+  margin: 0 0 6px;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.footer-credit-copy:last-child {
+  margin-bottom: 0;
+}
+
+.footer-credit-copy a {
+  color: var(--ink);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(20px);
