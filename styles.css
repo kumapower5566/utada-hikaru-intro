@@ -176,6 +176,7 @@ a {
   background: rgba(19, 35, 58, 0.08);
   color: var(--ink);
   cursor: pointer;
+  text-decoration: none;
   transition:
     transform 180ms ease,
     background 180ms ease,
@@ -188,31 +189,12 @@ a {
   height: 18px;
 }
 
-.sound-toggle::after {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 2px;
-  border-radius: 999px;
-  background: currentColor;
-  transform: rotate(-42deg);
-  opacity: 1;
-  transition: opacity 180ms ease;
-}
-
-.sound-toggle.is-active {
-  background: var(--ink);
-  color: #fffaf4;
-  box-shadow: 0 10px 22px rgba(19, 35, 58, 0.18);
-}
-
-.sound-toggle.is-active::after {
-  opacity: 0;
-}
-
 .sound-toggle:hover,
 .sound-toggle:focus-visible {
   transform: translateY(-1px);
+  background: var(--ink);
+  color: #fffaf4;
+  box-shadow: 0 10px 22px rgba(19, 35, 58, 0.18);
 }
 
 .lang-btn {
